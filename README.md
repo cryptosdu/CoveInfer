@@ -330,9 +330,6 @@ COVE_FORCE_MATH_SDP=1 python evaluation.py \
 
 正常。`llama-commit.py` 可能对单层权重跑很久。可先在终端跑完 ppgen/commit，再在 UI 验证。
 
-### 从 Cvee 改名 Cove 后 zkLLM / SAGE 异常
-
-检查 `zkllm-workdir/.../.artifact_manifest.json` 中的 `cache_dir` 是否已指向 `Cove`；manifest 与权重未变时不应触发全量 commit。若已在跑 commit，先等其结束或结束进程再测 SAGE。
 
 ### Chat 报 `GPU status: ERROR` / `torch` 未定义
 
